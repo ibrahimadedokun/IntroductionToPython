@@ -1,7 +1,7 @@
 import random as _random
 import operator as _operator
 
-print("Subtracting application")
+print("===SUBTRACTING APPLICATION===")
 
 scores = 0
 
@@ -10,18 +10,20 @@ while scores > -3 and scores < 3:
     secondNumber = _random.randrange(1, 100)
 
     if firstNumber > secondNumber:
-        print(str(firstNumber) + " - " + str(secondNumber))
+        print("\n" + str(firstNumber) + " - " + str(secondNumber))
 
         while True:
             try:
-                response = int(input("The answer is: "))
+                response = int(input("You've entered: "))
             except ValueError:
                 print("Enter a valid answer...")
                 continue
             else:
-                break
+                break        
 
-        if response == _operator.sub(firstNumber, secondNumber):
+        answer = _operator.sub(firstNumber, secondNumber)
+
+        if response == answer:
             scores = scores + 1
             print("Correct!")
             print("Total score now: " + str(scores))
@@ -29,7 +31,7 @@ while scores > -3 and scores < 3:
                 print("You are a genius")
         else:
             scores = scores - 1
-            print("Wrong!")
+            print("Wrong! The correct answer is {}".format(answer))
             print("Total score now: " + str(scores))
             if scores == -3:
                 print("Better luck next time")

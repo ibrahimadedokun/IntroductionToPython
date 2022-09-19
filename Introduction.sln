@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Introduction", "Introduction\Introduction.pyproj", "{0568DA19-988A-4714-9526-1D9B288E0490}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Summer", "Summer\Summer.pyproj", "{FF225161-FA65-495B-9B44-6E9B031340B5}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ArithmeticOperations", "Summer\ArithmeticOperations.pyproj", "{FF225161-FA65-495B-9B44-6E9B031340B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
