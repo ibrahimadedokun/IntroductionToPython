@@ -11,7 +11,7 @@ while scores > minScores and scores < maxScores:
     firstNumber = _random.randrange(1, 100)
     secondNumber = _random.randrange(1, 100)
 
-    print("\n" + str(firstNumber) + " / " + str(secondNumber))
+    print("\n" + str(firstNumber) + " + " + str(secondNumber))
 
     while True:
             try:
