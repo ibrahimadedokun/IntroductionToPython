@@ -4,8 +4,10 @@ import operator as _operator
 print("===MULTIPLYING APPLICATION===")
 
 scores = 0
+maxScores = 3
+minScores = -3
 
-while scores > -3 and scores < 3:
+while scores > minScores and scores < maxScores:
     firstNumber = _random.randrange(2, 12)
     secondNumber = _random.randrange(2, 12)
 
@@ -23,14 +25,14 @@ while scores > -3 and scores < 3:
     answer = _operator.mul(firstNumber, secondNumber)
 
     if response == answer:
-        scores = scores + 1
+        scores += 1
         print("Correct!")
         print("Total score now: " + str(scores))
-        if scores == 3:
+        if scores == maxScores:
             print("You are a genius")
     else:
-        scores = scores - 1
+        scores -= 1
         print("Wrong! The correct answer is {}".format(answer))
         print("Total score now: " + str(scores))
-        if scores == -3:
+        if scores == minScores:
             print("Better luck next time")
