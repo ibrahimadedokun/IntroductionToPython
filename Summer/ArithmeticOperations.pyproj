@@ -5,7 +5,7 @@
     <ProjectGuid>ff225161-fa65-495b-9b44-6e9b031340b5</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Summer.py</StartupFile>
+    <StartupFile>EntryPoint.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ArithmeticBase.py" />
     <Compile Include="Divider.py" />
+    <Compile Include="EntryPoint.py" />
     <Compile Include="Multiplier.py" />
     <Compile Include="Subtracter.py" />
     <Compile Include="Summer.py" />
