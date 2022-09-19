@@ -1,15 +1,15 @@
 import random as _random
 import operator as _operator
 
-print("Adding application")
+print("Multiplying application")
 
 scores = 0
 
 while scores > -3 and scores < 3:
-    firstNumber = _random.randrange(1, 100)
-    secondNumber = _random.randrange(1, 100)
+    firstNumber = _random.randrange(2, 12)
+    secondNumber = _random.randrange(2, 12)
 
-    print(str(firstNumber) + " / " + str(secondNumber))
+    print(str(firstNumber) + " x " + str(secondNumber))
 
     while True:
             try:
@@ -20,7 +20,7 @@ while scores > -3 and scores < 3:
             else:
                 break
 
-    if response == _operator.add(firstNumber, secondNumber):
+    if response == _operator.mul(firstNumber, secondNumber):
         scores = scores + 1
         print("Correct!")
         print("Total score now: " + str(scores))
