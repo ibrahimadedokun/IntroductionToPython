@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ff225161-fa65-495b-9b44-6e9b031340b5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Subtracter.py</StartupFile>
+    <StartupFile>Multiplier.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Divider.py" />
+    <Compile Include="Multiplier.py" />
     <Compile Include="Subtracter.py" />
     <Compile Include="Summer.py" />
   </ItemGroup>
